@@ -1,7 +1,25 @@
-﻿@page "/"
+﻿using ZooLogic;
+@page "/"
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Zoo Keeper</h1>
+<h2>Animal List</h2>
 
-Welcome to your new app.
+<label>
+    Animal
+    <input type="text" @bind=AnimalInput>
+</label>
+<label>
+    Species
+    <input type="text" @bind=SpeciesInput>
+</label>
+
+@code {
+string AnimalInput;
+string SpeciesInput;
+
+void AddAnimal() {
+    
+}
+}
